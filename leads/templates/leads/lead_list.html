@@ -1,0 +1,12 @@
+{% extends "leads/base.html" %}
+{% load static %}
+{% block title %} Lead List {% endblock title %} 
+{% block content %}
+<h1>Welcome to Django CRM</h1>
+       <p>Feel free to ask anything...</p>
+       <ul>{% for lead in leads %}
+         <li><a href="{% url 'lead_detail' lead.pk %}">{{ lead.first_name }} {{ lead.last_name }}</a> </li>
+        {% endfor %}</ul>
+        <hr>
+        <a href="{% url 'lead_create' %}">Create Lead</a>
+{% endblock content %}

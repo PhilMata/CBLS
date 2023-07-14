@@ -1,0 +1,45 @@
+{% extends "leads/base.html" %}
+{% load static %}
+{% block title %} Lead List {% endblock title %} 
+{% block content %}
+    <div class="container-fluid">
+        <div class="container">
+            <nav class="d-flex justify-content-between p-4">
+                <div class="nav-items1">
+                    <div class="logo-icon">
+                        <span class="material-icons-sharp text-success">
+                            change_circle
+                            </span>
+                    </div>
+                    <div class="logo-text">
+                        <h3>CBLS</h3>
+                    </div>
+                </div>
+                <div class="nav-items2">
+                    <div class="some-links">
+                        <a href="">Leads</a>
+                        <a href="">Signup</a>
+                    </div>
+                    <div class="some-button"><a class="btn btn-secondary d-flex" href="">Login <span class="material-icons-sharp mx-1">
+                        arrow_forward
+                        </span></a></div>
+                </div>
+            </nav>
+            <main>
+                <div class="middle text-center p-3">
+                    <div class="picture">
+                        <img class="img-fluid" src="" alt="">
+                    </div>
+                    <div class="inside-text">
+                        <h2>CrossBorder CRM</h2>
+                        <p>This helps you manage your work.</p>
+                    </div>
+                    <div class="inside-buttons">
+                        <button class="btn btn-success mx-1" type="submit">Leads</button>
+                        <button class="btn btn-secondary mx-1" type="submit">Leads</button>
+                    </div>
+                </div>
+            </main>
+        </div>
+    </div>
+{% endblock content %}

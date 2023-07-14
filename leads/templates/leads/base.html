@@ -1,0 +1,62 @@
+{% load static %}
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>
+      {% block title %}
+      {% endblock title %}
+    </title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+          rel="stylesheet"
+          integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+          crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Icons+Sharp"
+          rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'leads/main.css' %}">
+    {% block class %}
+    {% endblock class %}
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+            crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <div class="container-fluid">
+      <div class="container">
+          <nav class="d-flex justify-content-between p-4">
+              <div class="nav-items1">
+                  <div class="logo-icon">
+                      <span class="material-icons-sharp text-success">
+                          change_circle
+                          </span>
+                  </div>
+                  <div class="logo-text">
+                      <h3>CBLS</h3>
+                  </div>
+              </div>
+              <div class="nav-items2">
+                  <div class="some-links">
+                      <a href="">Leads</a>
+                      <a href="">Signup</a>
+                  </div>
+                  <div class="some-button"><a class="btn btn-secondary d-flex" href="">Login <span class="material-icons-sharp mx-1">
+                      arrow_forward
+                      </span></a></div>
+              </div>
+          </nav>
+         {% block content %}
+         
+         
+         {% endblock content %}
+      </div>
+  </div>
+   
+  </body>
+</html>

@@ -1,0 +1,215 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+
+/* ----------------- ROOT VARIABLES ------------------ */
+:root {
+    --color-sky: #87CEEB;
+    --color-blue: #0d47c5;
+    --color-message: #f8f0f0;
+    --color-primary: #7b2cbf;
+    --color-danger: #af3010;
+    --color-success: #50ce30;
+    --color-warning: #f0f33a;
+    --color-white: #fff;
+    --color-info-dark: #1a1a1a;
+    --color-info-light: #dce1eb;
+    --color-dark: #000000;
+    --color-light: rgba(132, 139, 200, 0.18);
+    --color-primary-variant: #111e88;
+    --color-dark-variant: #000000;
+    --color-background: #f6f6f9;
+
+    --card-border-radius: 2rem;
+    --border-radius-1: 0.4rem;
+    --border-radius-2: 0.8rem;
+    --border-radius-3: 1.2rem;
+
+    --card-padding: 1.8rem;
+    --padding-1: 1.2rem;
+
+    --box-shadow: 0 2rem 3rem var(--color-light)
+}
+
+/* ----------------- MEDIA QUARIES ------------------ */
+.dark-theme-variables {
+    --color-info-dark: #fffefe;
+    --color-background: #181a1e;
+    --color-message: #f8f0f0;
+    --color-white: #202528;
+    --color-dark: #edeffd;
+    --color-dark-variant: #a3bdcc;
+    --color-light: rgba(0, 0, 0, 0.4);
+    --box-shadow: 0 2rem 3rem var(--color-light)
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+
+
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+
+}
+
+.color-company{
+    background: var(--color-blue);
+}
+
+.container-fluid {
+    height: 100vh;
+}
+
+.container {
+    height: 100vh;
+}
+
+
+
+.auth-form {
+    width: 300px;
+    aspect-ratio: 1/.7;
+    top: 0;
+    margin-top: 0;
+    margin-bottom: 4rem;
+}
+
+.call-out {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    margin-bottom: 0;
+}
+
+.auth-form .form-control a.forgot-password {
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.auth-form .form-control input {
+    height: 2.2rem;
+    padding-left: 1rem;
+    border: 0.23px solid gray;
+    border-radius: var(--border-radius-1);
+}
+
+.form-control select {
+    height: 2.2rem;
+    padding-left: 1rem;
+    border: 0.23px solid gray;
+    border-radius: var(--border-radius-1);
+}
+
+.auth-form .form-control input:focus {
+    border: 0.23px solid green;
+    border-radius: var(--border-radius-1);
+}
+
+.auth-form-link {
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    bottom: 0;
+    margin-bottom: 2rem;
+
+}
+
+.auth-form-link .box-links {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    font-size: 14px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.auth-form .auth-form-header{
+    font-family: 'Poppins',sans-serif;
+    font-weight: 200;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.auth-form .auth-form-header span{
+    font-size: 5rem;
+    margin-bottom: 2rem;
+    top: 0;
+}
+
+.auth-form .auth-form-header .sign-circle{
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    margin-bottom: 2rem;
+}
+
+.auth-form .auth-form-header .sign-circle .material-icons-outlined{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+   
+}
+
+
+/*-------------LANDING PAGE ------------------*/
+
+nav{
+    height: 90px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav .nav-items1{
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    gap: 0.23rem;
+}
+
+nav .nav-items1 .material-icons-sharp{
+    font-size: 3rem;
+}
+
+nav .nav-items2{
+    display: flex;
+    gap: 1rem;
+}
+
+nav .nav-items2 a{
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+}
+
+.some-links{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.middle{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.picture{
+    height: 250px;
+    aspect-ratio: 1/.8;
+    background: gray;
+}

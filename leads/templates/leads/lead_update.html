@@ -1,0 +1,27 @@
+{% extends "leads/base.html" %}
+{% load static %}
+{% block title %} Create Lead {% endblock title %} 
+{% block content %}
+    <div class="container-fluid">
+        <div class="container d-flex align-items-center justify-content-center">
+            <div class="auth-form ">
+                <div class="auth-form-header d-flex justify-content-center mb-3 text-center">
+                    <span class="material-icons-sharp text-success">
+                        update
+                        </span>
+                    <h3>Update Lead: {{ lead.first_name }} {{ lead.last_name }} </h3>
+                </div>
+                <form action="" method="post">
+                    {% csrf_token %}
+                    <div class="form-control d-flex flex-column justify-content-center py-2">
+                        {{ form }}
+                        <button class="btn btn-success btn-small mt-3 mb-0">
+                            Update
+                        </button>
+                    </div>
+                </form>
+
+            </div>
+        </div>
+    </div>
+{% endblock content %}

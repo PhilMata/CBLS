@@ -1,0 +1,44 @@
+{% extends "leads/base.html" %}
+{% load static %}
+{% block title %} Create Lead {% endblock title %} 
+{% block content %}
+    <div class="container-fluid">
+        <div class="container d-flex align-items-center justify-content-center">
+            <div class="auth-form ">
+                <div class="auth-form-header d-flex justify-content-center mb-3">
+                    <span class="material-icons-sharp text-success">
+                        account_circle
+                        </span>
+                    <h3>Sign in to CBLS</h3>
+                </div>
+                <form  method="post">
+                    {% csrf_token %}
+                    <div class="form-control d-flex flex-column justify-content-center py-2">
+                        <input class="mb-3 mt-4" type="text" placeholder="username">
+                        <input class="mb-3 mt-2" type="text" placeholder="password">
+                        <a class="forgot-password text-end" href="">Forgot password?</a>
+                        <button class="btn btn-success btn-small mt-3 mb-0" type="submit">
+                            Sign In
+                        </button>
+                    </div>
+                </form>
+                <div class="auth-form-footer mt-4">
+                    <div class="form-control d-flex justify-content-center align-items-center ">
+                        <p class="mx-1 mb-1 mt-0">New to CBLS |</p>
+                        <a class="mb-1 mt-0 text-decoration-none" href="">Create an account</a>
+                    </div>
+                </div>
+
+                <div class="auth-form-link ">
+                    <div class="box-links">
+                        <a class="mb-1 mt-0 text-decoration-none" href="">Terms</a>
+                        <a class="mb-1 mt-0 text-decoration-none" href="">Privacy</a>
+                        <a class="mb-1 mt-0 text-decoration-none" href="">Security</a>
+                        <a class="mb-1 mt-0 text-decoration-none text-muted" href="">Contact P.Mataba</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+{% endblock content %}
